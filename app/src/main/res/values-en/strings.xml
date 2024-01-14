@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="i_am_useless">I am useless</string>
+    <string name="don_t_push_me">Don\'t Push Me!</string>
+    <string name="hello_world_how_are_you">Hello World! How are you?</string>
+</resources>

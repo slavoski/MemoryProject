@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">P1 Memory</string>
+    <string name="memoryOption">Memory</string>
+    <string name="easy_3x3">Easy (3x3)</string>
+    <string name="normal_4x4">Normal (4x4)</string>
+    <string name="hard_5x5">Hard (5x5)</string>
+    <string name="the_game_of">The Game of</string>
+</resources>
