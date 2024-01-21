@@ -2,14 +2,11 @@ package com.example.p1_memory;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-
-    private Board _gameBoard;
-    private ListView _gameBoardView;
 
 
     @Override
@@ -20,14 +17,11 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.easy).setOnClickListener(this::easyButtonOnClick);
         findViewById(R.id.average).setOnClickListener(this::normalButtonOnClick);
         findViewById(R.id.hard).setOnClickListener(this::hardButtonOnClick);
-
-        _gameBoardView = findViewById(R.id.gameboardList);
-
     }
 
 
     public void easyButtonOnClick(View view) {
-        CreateGrid(3);
+        CreateGrid(2);
     }
 
     public void normalButtonOnClick(View view) {
@@ -35,13 +29,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hardButtonOnClick(View view) {
-        CreateGrid(5);
+        CreateGrid(6);
     }
 
     private void CreateGrid(int size)
     {
-        _gameBoard = new Board(size);
-
+        Intent intent = new Intent(this, GameBoardActivity.class );
+        intent.putExtra("size", size);
+        startActivity(intent);
     }
 
 
