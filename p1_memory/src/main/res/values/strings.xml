@@ -7,4 +7,5 @@
     <string name="the_game_of">The Game of</string>
     <string name="final_score">You clicked a total of %d times!</string>
     <string name="restart">Restart Game</string>
+    <string name="congratulations">Congratulations!</string>
 </resources>
