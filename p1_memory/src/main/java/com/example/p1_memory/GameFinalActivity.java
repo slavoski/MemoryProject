@@ -8,19 +8,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.p1_memory.databinding.ActivityGameFinalBinding;
 public class GameFinalActivity extends AppCompatActivity  {
 
-    private ActivityGameFinalBinding binding;
-    private ViewModel data = new ViewModel();
+    private final ViewModel data = new ViewModel();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityGameFinalBinding.inflate(getLayoutInflater());
+        com.example.p1_memory.databinding.ActivityGameFinalBinding binding = ActivityGameFinalBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
         binding.setViewModel(data);
-
 
         data.finalScore = getIntent().getIntExtra("finalScore", 0);
 
